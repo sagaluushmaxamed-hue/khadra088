@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // for loop
+      for (let num = 1; num <= 10; num++) {
+        document.write(num);
+      }
+      console.log("even numbers");
+      for (let n = 1; n <= 20; n++) {
+        if (n % 2 == 0) {
+          console.log(n);
+        }
+      }
+      console.log("odd numbers");
+      for (let n = 1; n <= 20; n++) {
+        if (n % 2 != 0) {
+          console.log(n);
+        }
+      }
+
+      // nested loop
+      for (let s = 1; s < 4; s++) {
+        console.log("outer:", s);
+        for (let j = 1; j < 4; j++) {
+          console.log("inner:", j);
+        }
+      }
+
+      //  multipilication
+      for (let i = 1; i < 5; i++) {
+        for (let j = 1; j < 5; j++) {
+          console.log("${i}x${j}");
+        }
+      }
+
+      let attempt = 1;
+
+      let qiyas = Number(prompt("qiyas number kaan"));
+      if (qiyas > 17) {
+        alert("too high");
+      } else qiyas < 17;
+      alert("too low");
+
+      attempt++;
+      while (qiyas !== 17) {
+        // console.log("wuu qaldan yahay fadlan ku celi");
+        qiyas = Number(prompt("ku celi mar kle"));
+      }
+      console.log("hampalyoh waa sheegtay numberka");
+      console.log("attempts:" + attempt);
+
+      // CLASS WORK
+      let qiya = 17;
+      let guess;
+      let attempts = 0;
+
+      qiyas = Number(prompt("qiyas numberka "));
+      attempts++;
+      if (qiyas > 17) {
+        console.log("too high");
+      } else if (qiyas < 17) {
+        console.log("too low");
+      } else {
+        console.log("corroct numner");
+      }
+      while (qiyas !== 17) {}
+      console.log("attempts:" + attempts);
+    </script>
+  </body>
+</html>
